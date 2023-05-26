@@ -1,0 +1,103 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+}
+p,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+figure {
+  margin: 0;
+}
+ul {
+  padding-left: 0;
+  margin: 0;
+}
+
+label {
+  cursor: pointer;
+}
+
+.hidden {
+  visibility: hidden;
+  position: absolute;
+  pointer-events: none;
+}
+
+.nightBackground {
+  background-color: #24426f;
+}
+
+.dayBackground {
+  background-color: #6092dd;
+}
+
+.wrapper {
+  width: 100vw;
+  height: 100vh;
+  transition: background-color 500ms ease-out;
+}
+
+.wrapper.night {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.container {
+  overflow: hidden;
+  margin: 20px;
+  position: relative;
+  width: 450px;
+  height: 240px;
+  border-radius: 1000px;
+  transition: background-color 500ms ease-out;
+  display: flex;
+  align-items: center;
+  box-shadow: inset 9px 13px 0px rgba(0, 0, 0, 0.1);
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.cloudsWrapper {
+  position: absolute;
+  inset: 1;
+  left: -50%;
+  transition: transform 500ms ease-out;
+  transform: translateY(150%);
+}
+
+.cloudsWrapper.active {
+  transform: translateY(0);
+}
+
+.starsWrapper {
+  position: absolute;
+  right: 0;
+  transition: transform 500ms ease-out;
+  transform: translateY(150%);
+}
+
+.starsWrapper.active {
+  transform: translateY(0);
+}
+
+.sunAndMoonWrapper {
+  position: relative;
+  display: flex;
+  margin-left: 36px;
+  margin-right: 36px;
+  transition: padding 500ms ease-out;
+}
+
+.sunAndMoonWrapper.night {
+  padding-left: calc(100% - 168px - 72px);
+}

@@ -1,0 +1,25 @@
+@keyframes sparkle {
+  0%,
+  100% {
+    fill: #ffe7a8;
+  }
+
+  50% {
+    fill: #7c8486;
+  }
+}
+
+.stars path {
+  animation: sparkle 3s ease-in-out infinite;
+}
+
+.stars path:nth-child(4n) {
+  animation-delay: 500ms;
+}
+
+.stars path:nth-child(4n + 1) {
+  animation-delay: 800ms;
+}
+.stars path:nth-child(4n + 2) {
+  animation-delay: 1400ms;
+}

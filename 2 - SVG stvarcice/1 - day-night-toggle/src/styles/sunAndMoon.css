@@ -1,0 +1,28 @@
+.ellipse {
+  transform: rotate(-50deg);
+  transform-origin: top;
+  transition: rx 500ms ease-out, ry 500ms ease-out, stroke 500ms ease-out,
+    fill 500ms ease-out;
+}
+
+.ellipse.day {
+  fill: #f6c67e;
+}
+
+.ellipse.night {
+  fill: #d8c38a;
+}
+
+.sunOrMoon {
+  transition: stroke 500ms ease-out, fill 500ms ease-out;
+}
+
+.sun {
+  stroke: #f6c67e;
+  fill: #feae37;
+}
+
+.moon {
+  stroke: #d8c38a;
+  fill: #f1da9d;
+}

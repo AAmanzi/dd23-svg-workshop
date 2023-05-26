@@ -1,0 +1,11 @@
+.scoreboard {
+  color: white;
+  font-size: 24px;
+  border-collapse: collapse;
+}
+
+.scoreboard td,
+.scoreboard th {
+  border: thin solid white;
+  padding: 8px;
+}

@@ -1,0 +1,8 @@
+**/*/node_modules
+.DS_Store
+yarn-debug.log*
+yarn-error.log*
+logs
+*.log
+.vscode/*
+!.vscode/extensions.json

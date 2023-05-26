@@ -1,0 +1,38 @@
+path {
+  transition: d 1s linear;
+}
+
+svg:hover .morph {
+  d: path(
+    "M100,100 m-100,0 c0,-50 50,-100 100,-100 c-50,50 50,150 100,100 c0,50 -50,100 -100,100 c-50,0 -100,-50 -100,-100"
+  );
+}
+
+/*
+  Padding
+  Padding
+  Padding
+  Padding
+  Padding
+*/
+
+.ellipse {
+  transform: rotate(-50deg);
+  transform-origin: top;
+}
+
+/*
+  Padding
+  Padding
+  Padding
+  Padding
+  Padding
+*/
+
+* {
+  font-family: "Courier New", Courier, monospace;
+}
+
+div {
+  margin-bottom: 70vh;
+}
