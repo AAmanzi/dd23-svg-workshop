@@ -16,6 +16,9 @@ const App = () => {
 
   return (
     <div className={classNames("wrapper", { night: isNight })}>
+      <h2 className="title">
+        Treba sacekat 10s da proradi animacija oblaka :(
+      </h2>
       <Toggle isNight={isNight} onChange={toggleNight} />
     </div>
   );

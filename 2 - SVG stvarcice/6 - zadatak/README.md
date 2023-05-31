@@ -1,0 +1,1 @@
+ovdje je dosta toga poop, ovo je samo working proof of concept sta je _trebao_ bit zadatak na kraju radionice

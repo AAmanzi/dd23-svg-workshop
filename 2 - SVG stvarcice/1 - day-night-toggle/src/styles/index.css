@@ -45,6 +45,10 @@ label {
   transition: background-color 500ms ease-out;
 }
 
+.title {
+  text-align: center;
+}
+
 .wrapper.night {
   background-color: rgba(0, 0, 0, 0.3);
 }
